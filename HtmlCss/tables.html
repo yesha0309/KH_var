@@ -4,9 +4,13 @@
     <table>
         <thead> <!--table header-->
             <tr> <!--table row-->
-                <th>Sr. Number</th> <!--table header-->
-                <th> Name</th>
-                <th> Marks</th>
+                <th rowspan="2">Sr. Number</th> <!--table header-->
+                <th rowspan="2"> Name</th><!--rowspan will take n rows space as mentioned-->
+                <th colspan="2"> Marks</th> <!--colspan will take n column space as mentioned-->
+            </tr>
+            <tr>
+                <th>Score</th>
+                <th>Percentage</th>
             </tr>
         </thead>
         <tbody> <!-- table body-->
@@ -14,21 +18,25 @@
                 <td>0101</td> <!--tbale data-->
                 <td>John</td>
                 <td>77</td>
+                <td>77%</td>
             </tr>
             <tr>
                 <td>0201</td>
                 <td>Doe</td>
                 <td>92</td>
+                <td>92%</td>
             </tr>
             <tr>
                 <td>0401</td>
                 <td>Tim</td>
                 <td>33</td>
+                <td>33%</td>
             </tr>
             <tr>
                 <td>0103</td>
                 <td>Tina</td>
                 <td>82</td>
+                <td>82%</td>
             </tr>                                    
         </tbody>
     </table>
