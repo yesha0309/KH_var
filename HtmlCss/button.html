@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>button</title>
+  </head>
+  <body>
+    <form action="/" method="get">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <!--create button using input Type element, which won't be flexiable and easy to use-->
+        <input type="submit" value="Submit" />
+      </div>
+      <div>
+        <!--create button using "button element"-->
+        <button type="submit">
+          <img src="https://unsplash.it/16/16" />
+          <!--16/16 represents the size of img-->
+          Submit
+        </button>
+        <!-- button:submit-->
+      </div>
+      <div>
+        <!-- button reset-->
+        <button type="reset">Reset</button>
+        <!--clears values form all form fields-->
+      </div>
+      <div>
+        <!--regular button-->
+        <button type="button">
+          Will not do anything, unless told. Which we can specify using js
+        </button>
+        <button
+          type="reset"
+          style="background-color: darkgoldenrod; color: white; font-size: 24px; padding: 12px; border: 5px solid black;"
+        > <!--padding -- used to add some space between the text and boundries of the border of the button-->
+        <!-- border-- is used to add border with px size, borderType(solid) and color  -->
+          Reset
+        </button>
+        <input type="submit" value="Submit" />
+        <!-- in same div, it will show the buttons in same line-->
+      </div>
+    </form>
+  </body>
+</html>
