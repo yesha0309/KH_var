@@ -1,0 +1,17 @@
+<html>
+<head><meta charset="utf-8"><title>DataList</title></head>
+<body>
+    <form action="/" method="post"> <!--for inputType attribute we are using id as "brand" while for dataList, we are using "brands"-->
+        <label for="brand">Select a brand</label>
+        <input type="text" name="brand" id="brand" list = "brands">
+        <!--adding the list atttibute by its ID in the inputType will link the datalist and inputType -->
+        <datalist id ="brands"> <!--option can be used as a singular as well as paired tag, works same-->
+            <option value="">nike</option>
+            <option value="">Adidas</option>
+            <option value=""> Reebok
+            <option value="">timberland</option>
+            <option value=""> nike woman
+        </datalist>
+    </form>
+</body>
+</html>
