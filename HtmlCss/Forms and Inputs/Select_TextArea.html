@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form action="/" method="post"></form>
+    <div>
+      <label for="gender">I am</label>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female" selected>Female</option>
+        <!-- selected will set the pre-selected attribute-->
+      </select>
+    </div>
+    <div>
+      <label for="about">About Me</label>
+      <textarea
+        name="about"
+        id="about"
+        cols="50"
+        rows="10"
+        style="vertical-align: top"
+        placeholder="I am about"  
+        minlength="10"
+        maxlength="1000"
+      >Pre-filed text to be written here</textarea> <!--placeholder will display what text area is about.-->
+    </div> <!-- min and max length specifies number of characters-->
+  </body>
+</html>
+<!--disabled - will disable to type anything into the text area-->
+<!--readonly - will only allow you to read and not type-->
