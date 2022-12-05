@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Elements</title>
+    <!-- multiple elements can be given the same styles using class -->
+    <style> /*predefine the css class using dot eg, .redText -- dotCSSClassName*/        
+        .redText{
+            color: yellow;        
+        }
+        p.redText{ /* p.redText will specify the type of class it should apply color to*/
+            color: yellow;        
+        }
+        #inside {/*targetting the H1 element by its id- # before it is needed*/
+            background-color: aquamarine;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="inside">inside div</h1>
+    </div>
+    <p id="inside" class="redText">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam
+      voluptates rem nihil iure nisi omnis odio voluptatibus facere sit,
+      obcaecati laboriosam necessitatibus aspernatur animi vel iste recusandae,
+      pariatur modi?
+    </p>
+    <h1 class="redText"> h1</h1>
+    <h1>outside div</h1>
+  </body>
+</html>
