@@ -1,0 +1,80 @@
+<!-- # to call using class -->
+<!-- . to call using id -->
+<!-- refrence is always up to down, in style siblings -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Html Elements</title>
+    <style>
+        .container .redText{ /* .parent .child -- will apply to all redText in the class="container*/
+            color:red;
+        }
+        .container #myHeader1{ /* .parent #id */
+            color: blue;
+        }
+        .container > #p{ /* .parent #id should be a direct child of container than changes are visible */
+            color: rgb(0, 255, 157);
+            font-size: x-large;
+        }
+        /* sibiling */
+        div + h1{ /* the div of container class and the h1 are sibilings, so the property will apply to them*/
+            color : green;
+        }
+        h1 + .myFooter {
+            background-color: aquamarine;
+        }
+        .myText1 + .myText2{ /* sibling inside a container*/
+            font-variant: small-caps;
+            color: yellowgreen;
+        }
+        .myText0 ~ .myText3{ /* used to refer all of the sibilings*/
+            color: orange;
+        }
+        /* target an HTML element using its attribute */
+        input[type="text"]{
+            border: 20px solid red; /*width style color*/
+        }
+        .blackHat[type="email"], input[type="password"]{ /*refrencing using class name for the input Type*/
+            background-color: blueviolet; /*refrencing 2 input types togther*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="p">imidate neighbour</p>
+        <h1 id ="myHeader" class="redText"> Hello world</h1>
+        <div class="myText0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorem hic facere dolore doloribus quo veniam in? Aliquam, corporis laboriosam.
+        </div>
+        <div class="myText1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde illo corrupti, suscipit ab consequatur distinctio nulla iure id quasi, consectetur, dolorum aperiam aspernatur atque facere. Nesciunt id nam quam nihil magni nisi consequatur voluptas error, officiis placeat animi eum doloribus dignissimos maxime quisquam. Quasi suscipit laudantium non cumque incidunt!
+        </div> 
+        <div class = "myText2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequatur quas sit possimus ratione quo, placeat consequuntur tenetur itaque minus distinctio voluptatibus, rem quis harum debitis? Quasi, dignissimos! Iure suscipit quasi, aliquam distinctio ea consectetur maxime, enim minima est, commodi animi alias laboriosam nam esse non voluptates ratione veritatis. Sed.
+        </div>
+        <div class="myText3">
+            <p>this is a para</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eligendi sequi blanditiis expedita hic quasi maxime facilis exercitationem ipsum, at quam omnis necessitatibus unde adipisci cupiditate repellat, obcaecati aliquam dolor.
+        </div>
+        <div>
+            <input type="text" name="username" id="username" >
+            <input type="email" name="email" id="email" class ="blackHat">
+            <input type="password" name="password" id="password">
+            <h1 id ="myHeader1" class="redText"> Hello world</h1>
+        </div>
+        <div>
+            <p id="p"> not direct child </p>
+        </div>
+        <div class="myText3">
+            <p>this is a para</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eligendi sequi blanditiis expedita hic quasi maxime facilis exercitationem ipsum, at quam omnis necessitatibus unde adipisci cupiditate repellat, obcaecati aliquam dolor.
+        </div>
+    </div>
+    <h1 class="myFooter">Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+    <h2 class="myFooter">Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+</body>
+</html>

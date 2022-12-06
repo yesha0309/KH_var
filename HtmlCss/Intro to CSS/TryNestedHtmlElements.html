@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested HTML Elements</title>
+    <style>
+      .container > .heading {
+        color: red;
+      }
+      .heading1+.sibling1{
+        font-size:xx-large;
+        background-color: aqua;
+      }
+      .heading3~.sibling3{
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- .container">".heading -- will only update the html elements with the sibling, which are directly placed inside the class class1 -->
+    <!-- > -- directChild selector-- will update all the direct child elements of the element container -->
+    <div class="container">
+      <h1 class="heading">heading</h1>
+      <div>
+        <h2 class="heading">heading inside div</h2>
+        <p>this won't be red as it is not a direct child of container</p>
+      </div>
+      <div>nor will this</div>
+    </div>
+
+
+
+    <!-- .heading1"+".sibling1 -- sibiling, all class names, sibling1 are selected which are immidiate neighbours of heading -->
+    <!-- + --sibling -- all the classes that are nenighbour to the heading1 class will be selectd-->
+    <div class="container1">
+        <h1 class="heading1">heading h1</h1>
+        <!-- <div>The style will no longer be applied to "sibling1 h1" because of this div</div> -->
+        <div class="sibling1"><h2>heading h2 inside div</h2></div>
+    </div>
+    
+
+
+
+    <!-- ~ --will select all the elements with class sibling that have neighbour heading -->
+    <div class="container3">
+        <h1 class="heading3"> Heading3 with ~</h1>
+        <div class="sibling3">
+            <h2> sibling3</h2>
+        </div>
+    </div>
+  </body>
+</html>
