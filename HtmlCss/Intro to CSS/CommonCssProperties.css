@@ -1,0 +1,25 @@
+.container{
+    color: aqua;
+    font-size: 24px;
+    font-style:oblique;
+    font-weight: 900; /*will make font thicker - default is 400*/
+    text-align: center; /*default is left -- changes the alignment*/
+    text-decoration: underline;
+    line-height: 50px; /* will increase the spacing between the lines*/
+
+    width: 10px; /*width of the container*/
+    height: 20px; /*height of container */
+    /* but if the content is bigger than the spicified height weight of container, 
+    than it will overflow and display out of the container */
+
+    /*we can also specify height width in percentage*/
+    width: 50%;
+    height: 50%;
+
+    background-image: url(https://unsplash.it/500/500); /*background Image*/
+    background-size: contain; /*background img compared to the container/text*/
+    background-repeat: no-repeat; /* the image will not repeat, there are other optiions too*/
+
+    /* 1em = 16 pixels -- em is a measures in comparision to parent font size. 
+    If there is no parent, than it compares to HTML element font size which is 16px */
+}
