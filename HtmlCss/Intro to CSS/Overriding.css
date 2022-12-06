@@ -1,3 +1,12 @@
 h1{ /*h1 is tag name*/
     color: blue;
 }
+h2{
+    color: aquamarine;
+}
+.headerh2{ /* the className(headerh2) takes precidence over tag Name(h2)*/
+    color:pink;
+}
+#headh2{ /*id(headh2) takes presidence over the className(headerh2)*/
+    color: purple;
+}
