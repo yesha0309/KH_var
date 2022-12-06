@@ -1,0 +1,15 @@
+a:link{
+    color: red;
+}
+a:visited{ /*only apply when the element is visited*/
+    color: green;
+}
+a:active{ /*applied only for few moments when the element is active, eg when the link is clicked on*/
+    background-color: purple;
+}
+.container:hover{ /*when hover over the HTML element*/
+    background-color: red;
+}
+.container:active{ /*as long as we click/hold click on the pseudoClass it remains active and shows the below changes*/
+    background-color: antiquewhite;
+}
