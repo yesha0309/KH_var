@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "googleFont";
+    src: url('ZenDots-Regular.ttf');
+}
+.parent h1, #pp{
+    font-family: "googleFont";
+}

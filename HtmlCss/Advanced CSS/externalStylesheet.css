@@ -1,0 +1,6 @@
+@import url('customFonts.css'); /*import the css file*/
+
+.parent h1, #pp{
+    font-family: "googleFont", serif;
+    color: purple;
+}

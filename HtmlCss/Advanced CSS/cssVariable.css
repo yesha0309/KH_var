@@ -1,0 +1,55 @@
+body{
+    --mainColor: red;
+    --mainFontSize: 350px;
+    /* we generally define the css variable on the top, so that all the child can access it */
+}
+/* .parent{
+    /* --mainColor: red;  --mainColor is a css variable */
+    /* color: var(--mainColor); using the variable defined 
+} */
+.child{
+    padding: 10px;
+    width: 600px;
+    size: var(--mainFontSize);
+}
+.child1{
+    background-color: orange;
+    color: var(--mainColor); /*the variable is only accessible to the class and its children*/
+} /*if defined in the child class, parent class won't change/won't access it*/
+.child2{
+    background-color: rgb(0, 149, 255);
+}
+.child3{
+    background-color: pink;
+    size: var(--mainFontSize);
+}
+
+:root {
+    --solar-system-text: rgb(154, 84, 154);
+    --planets-text: rgb(151, 102, 10);
+    --galaxy-text-color: #000;
+   
+    --galaxy-bg: #cb5e5e;
+    --solar-system-bg: #fbe2e5;
+    --planets-bg: #f4ca85;
+  }
+.galaxy {
+    color: var(--galaxy-text-color);
+     background-color: var(--galaxy-bg);
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.solar-system {
+    color: var(--solar-system-text);
+     background-color: var(--solar-system-bg);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.planets {
+    color: var(--planets-text);
+     background-color: var(--planets-bg);
+  padding: 10px;
+  margin-top: 20px;
+}
