@@ -1,0 +1,27 @@
+h1::before{
+    /* content: "Hello"; */
+    /* content: url(//unsplash.it/32/32); */
+    content: ">";
+    /* display: block; */
+    color: red;
+    /* font-size: 65px; */
+}
+h3::after{
+    display: block;
+    content: url(//unsplash.it/32/32);
+    color: red;
+    font-size: 65px;
+}
+.child1 p::before{
+    content: open-quote;
+}
+.child1 p::after{ /*opening and closing double quote*/
+    content: open-quote;
+}
+
+.child2 p::before, .child2 p::after{
+    color: red;
+    font-size: 64px;
+    font-style: italic;
+    content: open-quote;
+}

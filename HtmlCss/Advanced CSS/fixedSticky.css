@@ -1,0 +1,24 @@
+.parent{
+    background-color: antiquewhite;
+    padding: 20px;
+}
+.child{
+    padding: 10px;
+    width: 600px;
+}
+.child1{
+    background-color: orange;
+    position: fixed; /*the child1 doesn't move when we scroll the page, other elements do*/
+    top: 100px;
+    right: 100px; /*this position is always relative to HTML document*/
+}
+.child2{
+    background-color: rgb(0, 149, 255);
+    position: sticky;
+    top: 10px; /*child2 will behave normal at start, but when we start scrolling, it will start behaving as 
+    sticky after the top 10px for margin/border defined*/
+    /* STICKY - is a combination of relative and fix positining*/
+}
+.child3{
+    background-color: pink;
+}
