@@ -1,0 +1,20 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    /* TRANSITION PROPERTIES -- smooths the transition of the box from 200px to 400px */
+
+    /* transition-property: width ,height;
+    transition-duration: 1s, 5s ,1s;  width , height, background color */
+    /* transition-timing-function: ease;
+    transition-delay: 0ms; */
+
+    /* SHORT HAND NOTATION for Transition */
+    transition: width 1s ease, height 5s ease, background-color 1s ease;
+}
+.box:hover{
+    width: 400px;
+    height: 600px;
+    background-color: cadetblue;
+}
