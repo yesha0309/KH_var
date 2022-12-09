@@ -14,15 +14,17 @@
     background-color: lightgrey;
     padding: 10px;
     display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ; /*uses 2nd/more coloums as needed. While nowrap places all in one single line*/
 }
 .item{
     background-color: tomato;
-    width: 50px;
+    /* width: 50px; */
     margin: 5px;
     padding: 5px;
     color: white;
 }
-.item-1{
+/* .item-1{
     flex: 2;
 }
 .item-2{
@@ -36,4 +38,4 @@
 }
 .item-5{
     flex: 2;
-}
+} */
