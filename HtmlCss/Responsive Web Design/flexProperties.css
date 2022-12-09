@@ -1,0 +1,26 @@
+/* JUSTIFY-CONTENT-- Default -- "flex-start" how items should be aligned along the main axis, inside flex container */
+/* ALIGN-ITEMS -- Default-- "Strech" how items should be aligned along the cross axis inside the flex container */
+/* ALIGN-CONTENT -- align the lines of items as a whole */
+
+.container{
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    height: 100vh;
+
+    flex-flow: row wrap;
+
+    /* JUSTIFY-CONTENT */
+    justify-content: center;
+    align-items: center;
+
+    /* ALIGN-CONTENT-- can only be seen if we have mulitple line of content  */
+    align-content:stretch;
+}
+.item{
+    background-color: tomato;
+    /* height: 50px; */
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
