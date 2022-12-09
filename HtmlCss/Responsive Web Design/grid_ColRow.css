@@ -1,0 +1,42 @@
+/* GRID-layout -- is 2 dimensional gird based layout */
+/* It is used to build complex layouts that are too complicated for flexbox to handle */
+/* Flex is single dimensional layout */
+
+/* GRID is the MOST POWERFUL layout */
+/* It divides a container into rows and colums and lays out content within the cells */
+
+/* THINGS TO REMEMBER WHILE WORKING WITH GRID */
+/* GRID CONTAINER- the HTML element that is the parent for all the items in the grid.
+                    It is the element that has the display property defined on it and set equal to grid */
+/* Any nested children are not considered as grid items */
+/* GRID- ITEMS - the direct children of the grid container */
+
+/* -----------------------------------------ROWS & COLUMNS-------------------------------------------------------------------------------- */
+
+/* DISPLAY:GRID -- Defines the HTML element as a grid container and establishes a new grid formatting context for its contents */
+/* MIN-CONTENT -- Allows specifying dynamic width for a column or height for a row and ensures that the cell
+                  takes the min amount of space that the content needs */
+/* MINMAX() -- It is a method used to set a range of width for column or height for a row. The fun accepts 
+                2 parameters which are min and max values */
+
+
+
+.container{
+    background-color: lightblue;
+    padding: 10px;
+    display: grid;
+    
+    /* grid-template-columns: 25%  30% auto; */
+    grid-template-columns: 200px minmax(200px, 1fr) 3fr 2fr;
+    grid-template-rows: repeat(3, 150px);
+
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+
+    /* grid-gap: 20px 10px;         row column  */
+}                
+.item{
+    background-color: tomato;
+    padding: 5px;
+    color: white;
+}

@@ -1,0 +1,33 @@
+.container{
+    background-color: lightgrey;
+    padding: 10px;
+
+    /* converting the div with the class container into a flexbox */
+    display: flex; /*flex places all the items along the main axis, which is horizontal by default, which is changable */
+}
+.item{
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+/* flex doesn't represent number, it represents ratio */
+.item-1{
+    flex: 4;
+    order: 3; /*default value is orderly, but we can change the position using order*/
+}
+/* for us to use flex size and order, the parent property needs to be set as "DISPLAY-FLEX"--Necessary*/
+.item-2{
+    flex: 1;
+}
+.item-3{
+    flex: 2;
+}
+.item-4{
+    flex: 3;
+}
+.item-5{
+    flex: 1;
+}

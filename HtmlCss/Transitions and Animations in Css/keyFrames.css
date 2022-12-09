@@ -1,0 +1,43 @@
+@keyframes moveAround{
+    /* from{
+        left:0px;
+    }
+    to{
+        left: 400px;
+    } */
+
+    /* this can also be done using percentage */
+    0%, 100%{ /*this is called state*/
+        left: 0px;
+        top: 0px;
+        background-color: aqua;
+    }
+    25%{
+        left: 200px;
+        top: 0px;
+        background-color: blue;
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+        background-color: purple;
+        border-radius: 100px;
+    }
+    75%{
+        left: 0px;
+        top: 200px;
+        background-color: chartreuse;
+    }
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    position: relative;
+
+    animation-name: moveAround;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}

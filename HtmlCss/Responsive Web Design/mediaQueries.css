@@ -1,0 +1,37 @@
+.container{
+    background-color: lightgrey;
+    margin: 1%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* BREAK-POINTS - are specific values of the width in pixels that will cause the change in layout*/
+
+/* this is for screen size less than 600px */
+@media all and (max-width: 600px){  /*"all" defines all types of screens; laptop, mobile and others*/
+    .container{
+        background-color: aqua; /*background color changes upon size*/
+    }
+}
+
+/* for screen size between 600px-800px for laptop */
+@media all and (min-width: 600px) and (max-width:800px){
+    .container{
+        width: 48%;
+        float: left;
+        background-color: aquamarine;
+    }
+}
+
+@media all and (min-width: 800px){
+    .container{
+        width: 31%;
+        float: left;
+        background-color: cadetblue;
+    }
+}
+@media print{ /*the color of the backgroud when the file/page is printed*/
+    .container{
+        background-color: lightgray;
+    }
+}

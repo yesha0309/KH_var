@@ -1,0 +1,30 @@
+.box{ /*this will work when we see the transition*/
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    /* transition with margin and padding */
+    /* margin: 0px;
+    padding: 10px; */
+
+    /* transition with border */
+    /* border: 2px solid black;
+    border-radius: 20px; */
+
+    /* transition with position using top right bottom left */
+    position: relative;
+    top: 0px;
+    right: 0px;
+    
+    transition: all 1s ease-in-out;
+}
+.box:hover{ /*this will happen when we hover over the box*/
+    /* margin: 20px;
+    padding: 50px; */
+
+    /* border: 5px solid green;
+    border-radius: 30px; */
+
+    top: 100px;
+    left: 100px;
+}

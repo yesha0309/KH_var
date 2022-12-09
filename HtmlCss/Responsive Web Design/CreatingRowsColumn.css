@@ -1,0 +1,41 @@
+/* FELX-DIRECTION property- is used to specify the main axis within a flex container */
+/* Flex is a SINGLE DIRECTION layout process */
+
+/* Setting FELX-DIRECTION:ROW, will lay the items left-to-right within the container*/
+/* and setting it to ROW-REVERSE will lay it in right-left */
+
+/* FLEX-FLOW: css property is used as a "Short-hand" for specifing flex direction and flex wrap in a single line */
+/* eg: flex-direction:row;
+       flex-wrap: wrap; 
+   is same as
+        flex-flow:row wrap;    
+       */
+.container{
+    background-color: lightgrey;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ; /*uses 2nd/more coloums as needed. While nowrap places all in one single line*/
+}
+.item{
+    background-color: tomato;
+    /* width: 50px; */
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+/* .item-1{
+    flex: 2;
+}
+.item-2{
+    flex: 2;
+}
+.item-3{
+    flex: 2;
+}
+.item-4{
+    flex: 2;
+}
+.item-5{
+    flex: 2;
+} */
