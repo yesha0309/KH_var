@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 body{
-    margin: 0px !important;
+    margin: 0px !important; /*override- frund upon*/
     background-color: white;
     border: 1px solid lightgrey;
 }
@@ -93,7 +93,8 @@ nav ul li a{
     font-size: 3em;
     font-weight: bold;
     position: relative;
-    animation: appear 1s ease-in-out 0s forwards;
+    animation: appear 1s ease-in-out 0s ;
+    
 }
 
 .banner .heading small{

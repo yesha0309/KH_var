@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding | Contact</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="page-container">
-        <div class="nav">
-            <nav>
-                <div class="logo">
-                    <img src="logo.png" alt="logo">
-                    <div class="title">
-                        Coding
-                    </div>
-                </div>
-                <ul>
-                    <li>
-                        <a href="/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="/project.html">Project</a>
-                    </li>
-                    <li>
-                        <a href="/contact.html"  class="active">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+      <div class="nav">
+        <nav>
+          <div class="logo">
+            <img src="logo.png" alt="logo" />
+            <div class="title">Coding</div>
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="projects.html">Project</a>
+            </li>
+            <li>
+              <a href="contact.html" class="active">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="maintext">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ad sint
+        quo officia et porro optio architecto nemo deserunt nesciunt commodi
+        quam incidunt qui ratione amet libero, nostrum similique veniam.
+      </div>
+      <h3 class="title">Contact</h3>
+      <div class="container">
+        <form action="">
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" id="fname" placeholder="John" />
+          <label for="lname">First Name</label>
+          <input type="text" name="lname" id="lname" placeholder="Doe" />
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="china">China</option>
+            <option value="australia">Australia</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea type="text" name="message" id="message"></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23093.45458237393!2d-79.396719837508!3d43.654787757154956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb34d27310bd%3A0xba15d20622070393!2sDowntown%20Toronto%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1670767926237!5m2!1sen!2sca"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div class="maintext">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ad sint quo officia et porro optio architecto nemo deserunt nesciunt commodi quam incidunt qui ratione amet libero, nostrum similique veniam.
-        </div>
-        <h3 class="title">Contact</h3>
-        <div class="container">
-            <form action="">
-                <label for="fname">First Name</label>
-                <input type="text" name="fname" id="fname" placeholder="John">
-                <label for="lname">First Name</label>
-                <input type="text" name="lname" id="lname" placeholder="Doe">
-                <label for="country">Country</label>
-                <select name="country" id="country">
-                    <option value="india">India</option>
-                    <option value="usa">USA</option>
-                    <option value="uk">UK</option>
-                    <option value="china">China</option>
-                    <option value="australia">Australia</option>
-                </select>
-                <label for="message">Message</label>
-                <textarea type="text" name="message" id="message"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23093.45458237393!2d-79.396719837508!3d43.654787757154956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb34d27310bd%3A0xba15d20622070393!2sDowntown%20Toronto%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1670767926237!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
+      </div>
 
-
-        <div class="footer">
-            Copyright &copy; Coding
-        </div>
+      <div class="footer">Copyright &copy; Coding</div>
     </div>
-</body>
+  </body>
 </html>
