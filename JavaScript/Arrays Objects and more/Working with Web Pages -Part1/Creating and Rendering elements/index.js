@@ -2,6 +2,8 @@ const createPost = function ({ title, content }) {
     const socialCard = document.createElement('div');
     //createElement -- creates html elements like, h1, div ....
     socialCard.setAttribute('class', 'social-card');
+    //setAttribute -- is creating the attribute with the 'type=class' and 'class name = social card'
+    //something like : <div class="social-card"> </div>
   
     const icon = document.createElement('div');
     icon.setAttribute('class', 'post-icon');
