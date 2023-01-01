@@ -1,5 +1,6 @@
 // Write your code here...
 import Product from "./Product";
+import RenderProduct from "./RenderProduct";
 
 const products = document.querySelector(".products");
 const nameInp = document.querySelector("input[name=name]");
@@ -40,7 +41,7 @@ addBtn.addEventListener("click", function () {
   const getProduct = getFormContents();
   if (getProduct) {
     const createProduct = new Product(...getProduct);
-    products.append(createProduct.render());
+    products.append(RenderProduct.call(createProduct));
   }
 
   clearForm();
