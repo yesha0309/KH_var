@@ -4,8 +4,8 @@ import {
   setPriority,
   removeItem,
   clearCompleted,
-} from "./model";
-import { renderShoppingList, renderCompletedList } from "./view";
+} from "./model.mjs";
+import { renderShoppingList, renderCompletedList } from "./view.mjs";
 
 const itemInput = document.querySelector("input[name='itemInput']");
 const shoppingListDiv = document.querySelector(".shopping-list");
@@ -25,7 +25,7 @@ shoppingListDiv.addEventListener("click", function (evt) {
     const priority = evt.target.classList.value;
     const itemId =
       evt.target.parentElement.parentElement.getAttribute("data-id");
-    console.log(itemId, priority);//------------------------
+    console.log(itemId, priority); //------------------------
     setPriority(itemId, priority);
     renderShoppingList();
   }
