@@ -1,0 +1,40 @@
+<!-- 
+  PROMISES: a promise is an intent to do something (such as provide data) at a future time and it does not garantee succes or failure
+
+  STAGES OF PROMISE:
+    1) PENDING: Underlying asynch code hasn't produced any result yet and is in processing
+      - after Pending state, it will be either failed or fulfilled
+          2) FAILED(rejected): error was observed which led to a failed outcome
+          3) FULFILLED(resloved): succcessful and no errors where observed
+
+  Promises do not block the code and we can work with asynch        
+
+  Promise uses 'then', which updates us the output of the promise
+      Promise
+            .then(result => showResult(result))
+            .then(out => showResult(out)) ----------- we can add mulitple 'then' which will execute in the order of expression
+            .catch(error => handleError(error))
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your JavaScript Playground</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>The News</h1>
+      <h5 id="error">Error: There was an error fetching the news!</h5>
+      <button id="getNewsBtn">Get News!</button>
+      <img id="spinner" src="img/spinner.gif" />
+      <ul id="newsList">
+        <!-- <li>This is a piece of news</li> -->
+      </ul>
+      <h4 id="source"></h6>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
