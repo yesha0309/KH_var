@@ -20,3 +20,17 @@ const addNumbers = function (a, b) {
 
 /* ARROW Function */ // Arrow fun are equivalent to Function Expression in many ways
 const addNumbers = (a, b) => a + b;
+
+//-------------------------------from ralph----------------------------------------
+// declaration
+function addFive(number) {
+  return number + 5;
+}
+
+// expression
+let addFive = function (number) {
+  return number + 5;
+};
+
+// Arrow function
+let addFive = (number) => number + 5;

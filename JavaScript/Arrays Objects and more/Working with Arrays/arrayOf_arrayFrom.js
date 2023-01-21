@@ -6,11 +6,13 @@ console.log(numArray); // ------[ <10 empty items> ]
 // --- it creats arrays of 10 length without any values
 //----- to solve this we add numArray.length
 console.log(numArray.length); // ---- 10
+numArray.push("test");
+console.log
 
 // we can instead use an Array constructor and Array.of() method to solve this issue
 
-let numArray1 = Array.of(30);
-console.log(numArray1); // -- [30]
+let numArray1 = Array.of(3);
+console.log("numArray1",numArray1); // -- [30]
 
 // -------------------array.from()------------------------
 
