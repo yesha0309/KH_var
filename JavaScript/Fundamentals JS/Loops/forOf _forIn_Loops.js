@@ -31,3 +31,10 @@ for (const product of products) {
   }
   console.log(totalCost(product));
 }
+
+//--------------------------ralph---------
+let num = Array.of(7, 32, 435);
+console.log(num);
+
+let num2 = new Array(7);
+console.log(num2[0]);

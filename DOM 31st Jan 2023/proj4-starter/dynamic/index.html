@@ -1,0 +1,68 @@
+<h1 class="">Sorting List</h1>
+<form>
+  <input type="text" id="valueInput" placeholder="Enter value" />
+  <button type="submit" id="addButton">Add value</button>
+</form>
+<ul class="list-group" id="list">
+  <!-- <li class="list-group-item">
+    Javascript course<span class="float-right">$22.1</span>
+  </li>
+  <li class="list-group-item">
+    Javascript course<span class="float-right">$44443.1</span>
+  </li>
+  <li class="list-group-item">
+    Javascript course<span class="float-right">$4.1</span>
+  </li> -->
+</ul>
+<button type="button" id="sortButton">Sort courses</button>
+
+<script>
+  // Get the input field, add button, sort button, and list
+  var valueInput = document.querySelector("#valueInput");
+  var addButton = document.querySelector("#addButton");
+  var sortButton = document.querySelector("#sortButton");
+  var list = document.querySelector("#list");
+
+  // Add an event listener to the add button
+  addButton.addEventListener("click", function (event) {
+    // Prevent the form from submitting
+    event.preventDefault();
+
+    // Get the value from the input field
+    var value = valueInput.value;
+
+    // Create a new list item and add it to the list
+    var newListItem = document.createElement("li");
+    newListItem.classList.add("list-group-item");
+    newListItem.innerHTML =
+      "Javascript course <span class='float-right'>$" + value + "</span>";
+    list.appendChild(newListItem);
+
+    // Clear the input field
+    valueInput.value = "";
+  });
+
+  // Add an event listener to the sort button
+  sortButton.addEventListener("click", function () {
+    // Get all list items
+    var listItems = document.querySelectorAll(".list-group-item");
+
+    // Extract the values and store them in an array
+    var values = [];
+    for (var i = 0; i < listItems.length; i++) {
+      var value = parseFloat(listItems[i].textContent.split("$")[1]);
+      values.push(value);
+    }
+
+    // Sort the values in ascending order
+    values.sort(function (a, b) {
+      return a - b;
+    });
+
+    // Update the HTML list to reflect the sorted values
+    for (var i = 0; i < listItems.length; i++) {
+      listItems[i].innerHTML =
+        "Javascript course <span class='float-right'>$" + values[i] + "</span>";
+    }
+  });
+</script>
